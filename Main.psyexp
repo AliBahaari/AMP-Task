@@ -169,8 +169,53 @@
         <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
       </KeyboardComponent>
     </Routine>
+    <Routine name="trialInstruction">
+      <TextComponent name="trialInstructionText">
+        <Param name="color" updates="constant" val="white" valType="str"/>
+        <Param name="colorSpace" updates="constant" val="rgb" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="flip" updates="constant" val="" valType="str"/>
+        <Param name="font" updates="constant" val="IRANSans" valType="str"/>
+        <Param name="languageStyle" updates="None" val="Arabic" valType="str"/>
+        <Param name="letterHeight" updates="constant" val="0.024" valType="code"/>
+        <Param name="name" updates="None" val="trialInstructionText" valType="code"/>
+        <Param name="opacity" updates="constant" val="1" valType="code"/>
+        <Param name="ori" updates="constant" val="0" valType="code"/>
+        <Param name="pos" updates="constant" val="(0, 0)" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="syncScreenRefresh" updates="None" val="True" valType="bool"/>
+        <Param name="text" updates="constant" val="حال که مکان کلید خوشایندی و ناخوشایندی را یاد گرفتید،&amp;#10;وارد آزمون اصلی می‌شویم که از تعداد تصاویر بیشتری تشکیل شده&amp;#10;و پاسخ‌های شما در آن ثبت می‌شود.&amp;#10;&amp;#10;لطفاً برای شروع کلید فاصله را فشار دهید.&amp;#10;" valType="str"/>
+        <Param name="units" updates="None" val="from exp settings" valType="str"/>
+        <Param name="wrapWidth" updates="constant" val="" valType="code"/>
+      </TextComponent>
+      <KeyboardComponent name="trialInstructionKeyboard">
+        <Param name="allowedKeys" updates="constant" val="'space'" valType="code"/>
+        <Param name="correctAns" updates="constant" val="" valType="str"/>
+        <Param name="disabled" updates="None" val="False" valType="bool"/>
+        <Param name="discard previous" updates="constant" val="True" valType="bool"/>
+        <Param name="durationEstim" updates="None" val="" valType="code"/>
+        <Param name="forceEndRoutine" updates="constant" val="True" valType="bool"/>
+        <Param name="name" updates="None" val="trialInstructionKeyboard" valType="code"/>
+        <Param name="saveStartStop" updates="None" val="True" valType="bool"/>
+        <Param name="startEstim" updates="None" val="" valType="code"/>
+        <Param name="startType" updates="None" val="time (s)" valType="str"/>
+        <Param name="startVal" updates="None" val="0.0" valType="code"/>
+        <Param name="stopType" updates="None" val="duration (s)" valType="str"/>
+        <Param name="stopVal" updates="constant" val="" valType="code"/>
+        <Param name="store" updates="constant" val="nothing" valType="str"/>
+        <Param name="storeCorrect" updates="constant" val="False" valType="bool"/>
+        <Param name="syncScreenRefresh" updates="constant" val="True" valType="bool"/>
+      </KeyboardComponent>
+    </Routine>
   </Routines>
   <Flow>
+    <Routine name="trialInstruction"/>
     <LoopInitiator loopType="TrialHandler" name="trials">
       <Param name="Selected rows" updates="None" val="" valType="str"/>
       <Param name="conditions" updates="None" val="[OrderedDict([('primeStim', 'Primes/C-1.jpg'), ('targetStim', 'Targets/T (1).BMP')]), OrderedDict([('primeStim', 'Primes/C-2.jpg'), ('targetStim', 'Targets/T (2).BMP')]), OrderedDict([('primeStim', 'Primes/S-7.jpg'), ('targetStim', 'Targets/T (37).BMP')]), OrderedDict([('primeStim', 'Primes/C-6.jpg'), ('targetStim', 'Targets/T (26).BMP')]), OrderedDict([('primeStim', 'Primes/S-5.jpg'), ('targetStim', 'Targets/T (45).BMP')]), OrderedDict([('primeStim', 'Primes/S-10.jpg'), ('targetStim', 'Targets/T (40).BMP')]), OrderedDict([('primeStim', 'Primes/C-7.jpg'), ('targetStim', 'Targets/T (7).BMP')]), OrderedDict([('primeStim', 'Primes/S-5.jpg'), ('targetStim', 'Targets/T (55).BMP')]), OrderedDict([('primeStim', 'Primes/S-6.jpg'), ('targetStim', 'Targets/T (56).BMP')]), OrderedDict([('primeStim', 'Primes/C-10.jpg'), ('targetStim', 'Targets/T (10).BMP')]), OrderedDict([('primeStim', 'Primes/S-4.jpg'), ('targetStim', 'Targets/T (34).BMP')]), OrderedDict([('primeStim', 'Primes/S-5.jpg'), ('targetStim', 'Targets/T (35).BMP')]), OrderedDict([('primeStim', 'Primes/C-3.jpg'), ('targetStim', 'Targets/T (13).BMP')]), OrderedDict([('primeStim', 'Primes/C-4.jpg'), ('targetStim', 'Targets/T (14).BMP')]), OrderedDict([('primeStim', 'Primes/S-8.jpg'), ('targetStim', 'Targets/T (58).BMP')]), OrderedDict([('primeStim', 'Primes/C-8.jpg'), ('targetStim', 'Targets/T (18).BMP')]), OrderedDict([('primeStim', 'Primes/S-10.jpg'), ('targetStim', 'Targets/T (60).BMP')]), OrderedDict([('primeStim', 'Primes/S-9.jpg'), ('targetStim', 'Targets/T (59).BMP')]), OrderedDict([('primeStim', 'Primes/C-9.jpg'), ('targetStim', 'Targets/T (19).BMP')]), OrderedDict([('primeStim', 'Primes/C-10.jpg'), ('targetStim', 'Targets/T (20).BMP')]), OrderedDict([('primeStim', 'Primes/C-1.jpg'), ('targetStim', 'Targets/T (21).BMP')]), OrderedDict([('primeStim', 'Primes/S-7.jpg'), ('targetStim', 'Targets/T (47).BMP')]), OrderedDict([('primeStim', 'Primes/S-3.jpg'), ('targetStim', 'Targets/T (33).BMP')]), OrderedDict([('primeStim', 'Primes/S-9.jpg'), ('targetStim', 'Targets/T (49).BMP')]), OrderedDict([('primeStim', 'Primes/C-1.jpg'), ('targetStim', 'Targets/T (11).BMP')]), OrderedDict([('primeStim', 'Primes/S-10.jpg'), ('targetStim', 'Targets/T (50).BMP')]), OrderedDict([('primeStim', 'Primes/S-2.jpg'), ('targetStim', 'Targets/T (52).BMP')]), OrderedDict([('primeStim', 'Primes/S-3.jpg'), ('targetStim', 'Targets/T (53).BMP')]), OrderedDict([('primeStim', 'Primes/C-9.jpg'), ('targetStim', 'Targets/T (29).BMP')]), OrderedDict([('primeStim', 'Primes/C-10.jpg'), ('targetStim', 'Targets/T (30).BMP')]), OrderedDict([('primeStim', 'Primes/S-1.jpg'), ('targetStim', 'Targets/T (31).BMP')]), OrderedDict([('primeStim', 'Primes/S-2.jpg'), ('targetStim', 'Targets/T (32).BMP')]), OrderedDict([('primeStim', 'Primes/S-6.jpg'), ('targetStim', 'Targets/T (36).BMP')]), OrderedDict([('primeStim', 'Primes/C-2.jpg'), ('targetStim', 'Targets/T (12).BMP')]), OrderedDict([('primeStim', 'Primes/S-8.jpg'), ('targetStim', 'Targets/T (48).BMP')]), OrderedDict([('primeStim', 'Primes/S-1.jpg'), ('targetStim', 'Targets/T (51).BMP')]), OrderedDict([('primeStim', 'Primes/C-3.jpg'), ('targetStim', 'Targets/T (3).BMP')]), OrderedDict([('primeStim', 'Primes/C-6.jpg'), ('targetStim', 'Targets/T (6).BMP')]), OrderedDict([('primeStim', 'Primes/C-5.jpg'), ('targetStim', 'Targets/T (5).BMP')]), OrderedDict([('primeStim', 'Primes/S-1.jpg'), ('targetStim', 'Targets/T (41).BMP')]), OrderedDict([('primeStim', 'Primes/C-3.jpg'), ('targetStim', 'Targets/T (23).BMP')]), OrderedDict([('primeStim', 'Primes/S-2.jpg'), ('targetStim', 'Targets/T (42).BMP')]), OrderedDict([('primeStim', 'Primes/C-5.jpg'), ('targetStim', 'Targets/T (25).BMP')]), OrderedDict([('primeStim', 'Primes/S-8.jpg'), ('targetStim', 'Targets/T (38).BMP')]), OrderedDict([('primeStim', 'Primes/S-9.jpg'), ('targetStim', 'Targets/T (39).BMP')]), OrderedDict([('primeStim', 'Primes/S-6.jpg'), ('targetStim', 'Targets/T (46).BMP')]), OrderedDict([('primeStim', 'Primes/C-2.jpg'), ('targetStim', 'Targets/T (22).BMP')]), OrderedDict([('primeStim', 'Primes/C-4.jpg'), ('targetStim', 'Targets/T (4).BMP')]), OrderedDict([('primeStim', 'Primes/C-4.jpg'), ('targetStim', 'Targets/T (24).BMP')]), OrderedDict([('primeStim', 'Primes/S-3.jpg'), ('targetStim', 'Targets/T (43).BMP')]), OrderedDict([('primeStim', 'Primes/S-4.jpg'), ('targetStim', 'Targets/T (44).BMP')]), OrderedDict([('primeStim', 'Primes/C-7.jpg'), ('targetStim', 'Targets/T (27).BMP')]), OrderedDict([('primeStim', 'Primes/C-8.jpg'), ('targetStim', 'Targets/T (28).BMP')]), OrderedDict([('primeStim', 'Primes/S-4.jpg'), ('targetStim', 'Targets/T (54).BMP')]), OrderedDict([('primeStim', 'Primes/C-8.jpg'), ('targetStim', 'Targets/T (8).BMP')]), OrderedDict([('primeStim', 'Primes/C-9.jpg'), ('targetStim', 'Targets/T (9).BMP')]), OrderedDict([('primeStim', 'Primes/S-7.jpg'), ('targetStim', 'Targets/T (57).BMP')]), OrderedDict([('primeStim', 'Primes/C-5.jpg'), ('targetStim', 'Targets/T (15).BMP')]), OrderedDict([('primeStim', 'Primes/C-6.jpg'), ('targetStim', 'Targets/T (16).BMP')]), OrderedDict([('primeStim', 'Primes/C-7.jpg'), ('targetStim', 'Targets/T (17).BMP')])]" valType="str"/>
