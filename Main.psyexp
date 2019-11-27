@@ -6,15 +6,15 @@
     <Param name="Completed URL" updates="None" val="" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
-    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': '001'}" valType="code"/>
+    <Param name="Experiment info" updates="None" val="{'participant': '', 'session': ''}" valType="code"/>
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
     <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="html" valType="str"/>
     <Param name="Incomplete URL" updates="None" val="" valType="str"/>
     <Param name="JS libs" updates="None" val="packaged" valType="str"/>
     <Param name="Monitor" updates="None" val="testMonitor" valType="str"/>
-    <Param name="Save csv file" updates="None" val="False" valType="bool"/>
-    <Param name="Save excel file" updates="None" val="False" valType="bool"/>
+    <Param name="Save csv file" updates="None" val="True" valType="bool"/>
+    <Param name="Save excel file" updates="None" val="True" valType="bool"/>
     <Param name="Save log file" updates="None" val="True" valType="bool"/>
     <Param name="Save psydat file" updates="None" val="True" valType="bool"/>
     <Param name="Save wide csv file" updates="None" val="True" valType="bool"/>
@@ -176,9 +176,9 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="IRANSans" valType="str"/>
+        <Param name="font" updates="constant" val="Calibri" valType="str"/>
         <Param name="languageStyle" updates="None" val="Arabic" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.024" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.030" valType="code"/>
         <Param name="name" updates="None" val="trialInstructionText" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -220,9 +220,9 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="IRANSans" valType="str"/>
+        <Param name="font" updates="constant" val="Calibri" valType="str"/>
         <Param name="languageStyle" updates="None" val="Arabic" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.024" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.030" valType="code"/>
         <Param name="name" updates="None" val="practiceInstructionText" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
@@ -431,9 +431,9 @@
         <Param name="disabled" updates="None" val="False" valType="bool"/>
         <Param name="durationEstim" updates="None" val="" valType="code"/>
         <Param name="flip" updates="constant" val="" valType="str"/>
-        <Param name="font" updates="constant" val="IRANSans" valType="str"/>
+        <Param name="font" updates="constant" val="Calibri" valType="str"/>
         <Param name="languageStyle" updates="None" val="Arabic" valType="str"/>
-        <Param name="letterHeight" updates="constant" val="0.050" valType="code"/>
+        <Param name="letterHeight" updates="constant" val="0.060" valType="code"/>
         <Param name="name" updates="None" val="feedbackText" valType="code"/>
         <Param name="opacity" updates="constant" val="1" valType="code"/>
         <Param name="ori" updates="constant" val="0" valType="code"/>
